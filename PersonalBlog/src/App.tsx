@@ -1,29 +1,38 @@
 
-import './App.css'
-import { Grid } from '@material-ui/core'
-import Home from './pages/home/home'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './componentes/navbar/Navbar';
+import Login from './pages/login/Login';
+import Home from './pages/home/home';
+import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario';
+import ListaTema from './componentes/temas/listaatema/ListaTema';
+import ListaPostagem from './componentes/postagens/listapostagem/ListaPostagem';
 import Footer from './componentes/footer/Footer';
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './pages/login/Login';
-import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario';
 
 function App() {
   return (
-    <BrowserRouter>
-    <Navbar />
-    <div style={{ minHeight: '60vh' }}>
-    <Routes> // Antigo Switch
-      
-  <Route path="/" element={<Login />} />
-    <Route path="/login" element={<Login />} />
-    <Route path="/home" element={<Home />} />
-    <Route path="/cadastro" element={<CadastroUsuario />} />
-    </Routes>
-    </div>
-    <Footer />
-    </BrowserRouter>
+    <Router>
+      <Navbar />
+      <Routes>
+
+        <Route path="/" element={<Login  />} />
+
+        <Route path="/home" element={<Home />} />
+
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/cadastrousuario" element={<CadastroUsuario/>} />
+
+        <Route path="/temas" element={<ListaTema />} />
+
+        <Route path="/posts" element={<ListaPostagem />} />
+
+
+      </Routes>
+      <Footer />
+    </Router>
+
   );
 }
 
