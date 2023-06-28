@@ -4,7 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { Typography, Grid, Box } from '@material-ui/core';
 import './footer.css'
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokenReducer';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 
 
@@ -15,7 +15,7 @@ export default function Footer() {
     );
 
     // eslint-disable-next-line no-var
-    var footerComponet;
+    var footerComponent;
 
     if (token != '') {
         footerComponent = <Grid container className='grid-footer'>
@@ -36,7 +36,7 @@ export default function Footer() {
                 </Box>
                 <Box className='box2-footer'>
                     <Box paddingTop={1}>
-                        <Typography variant="subtitle2" gutterBottom className='textos' >© 2023 Copyright:</Typography>
+                        <Typography variant="subtitle2" gutterBottom className='textos' >© 2023 Copyright::</Typography>
                     </Box>
                     <Box>
                         <Typography variant="subtitle2" gutterBottom className='textos' >Felipe Sousa</Typography>
