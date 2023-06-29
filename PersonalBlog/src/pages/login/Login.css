@@ -1,9 +1,13 @@
+body{
+    background-color:beige;
+}
+
 .textos1{
     font-weight: bold !important;
  }
  
  .imagem{
-     background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
+     background-image: url(https://stories.freepiklabs.com/api/vectors/fingerprint/pana/render?color=&background=complete&hide=);
      background-repeat: no-repeat;
      width: 100vh;
      min-height: 100vh;
@@ -14,3 +18,25 @@
  .text-decorator-none{
      text-decoration: none;
  }
+
+ #usuario{
+    background-color: white;
+    text-decoration: underline;
+    font-size: smaller;
+ }
+
+
+#senha{
+    background-color: white;
+    text-decoration: underline;
+    font-size: smaller;
+}
+
+#logarbutton{
+  
+    font: 25px Arial;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
+}

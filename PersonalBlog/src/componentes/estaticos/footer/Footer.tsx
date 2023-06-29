@@ -1,5 +1,4 @@
 import { GitHub } from '@material-ui/icons';
-import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { Typography, Grid, Box } from '@material-ui/core';
 import './footer.css'
@@ -20,28 +19,23 @@ export default function Footer() {
     if (token != '') {
         footerComponent = <Grid container className='grid-footer'>
             <Grid item xs={12}>
-                <Box className='box1-footer'>
-                    <Typography variant="h5" className='textos'>Visite minhas redes sociais</Typography>
-                    <Box >
-                        <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                            <FacebookIcon className='network-footer' />
-                        </a>
-                        <a href="https://github.com/FelipeSdsilva" target="_blank">
-                            <GitHub className='network-footer' />
-                        </a>
-                        <a href="https://www.linkedin.com/in/felipesdsilva/" target="_blank">
-                            <LinkedInIcon className='network-footer' />
-                        </a>
+            <Box style={{ backgroundColor: "#3F51B5", height: "120px" }}>
+                        <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
+                            <Typography variant="h5" align="center" gutterBottom style={{ color: "white" }}>Siga-nos nas redes sociais </Typography>
+                        </Box>
+                        <Box display="flex" alignItems="center" justifyContent="center">
+                        
+                            <a href="https://www.linkedin.com/in/gustavo-santos-2a3505118/" target="_blank" rel="noopener noreferrer">
+                                <LinkedInIcon style={{ fontSize: 60, color: "white" }} />
+                            </a>
+                           
+                        </Box>
+                        
                     </Box>
-                </Box>
-                <Box className='box2-footer'>
-                    <Box paddingTop={1}>
-                        <Typography variant="subtitle2" gutterBottom className='textos' >© 2023 Copyright::</Typography>
-                    </Box>
-                    <Box>
-                        <Typography variant="subtitle2" gutterBottom className='textos' >Felipe Sousa</Typography>
-                    </Box>
-                </Box>
+                <Box paddingTop={1}>
+                            <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "white" }} >© 2020 Copyright:</Typography>
+                        </Box>
+                        
             </Grid>
         </Grid>
     }

@@ -1,8 +1,6 @@
 import axios from 'axios'
 
 export const api = axios.create({
-
-/*manipulação da api do backend*/
     baseURL: 'https://blogpessoalapi.onrender.com'
     
 })

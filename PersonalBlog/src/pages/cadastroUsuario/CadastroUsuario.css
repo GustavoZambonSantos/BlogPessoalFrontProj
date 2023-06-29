@@ -1,5 +1,5 @@
 .imagem2{
-    background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
+    background-image: url(https://stories.freepiklabs.com/api/vectors/firmware/amico/render?color=90CAF9FF&background=complete&hide=);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -13,4 +13,23 @@
 
 .btnCancelar{
     margin-right: 20px !important;
+}
+
+#cadastro{
+    background-color: white;
+    color: blue;
+}
+
+#cadastrobutton{
+    background-color: white;
+    color: blue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
+
+}
+#cadastrobutton2{
+    background-color: blue
+    ;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.755);
+
 }
