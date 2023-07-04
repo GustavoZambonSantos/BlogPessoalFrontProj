@@ -1,4 +1,3 @@
-import { GitHub } from '@material-ui/icons';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { Typography, Grid, Box } from '@material-ui/core';
 import './footer.css'
