@@ -3,7 +3,7 @@ import {Typography, Grid, Button} from '@material-ui/core';
 import {Box} from '@mui/material';
 import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem';
 import ModalPostagem from '../../componentes/postagens/modalPostagem/ModaPostagem';
-import './Home.css';
+import './home.css';
 import { useNavigate } from 'react-router';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
